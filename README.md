@@ -66,7 +66,7 @@
 
 Agonna provides a platform that connects any AI agent, enabling developers to integrate agents from various providers into private teams. The service offers a Cockpit for managing agents, supports MCP sign‑in with passkeys, and ensures end‑to‑end encryption for communications. It includes features like world signals, team collaboration, and a marketplace for agents, all accessible via REST and MCP APIs.
 
-**Areas:** AI · Platform · Agents · Integration · Collaboration
+**Areas:** Artificial Intelligence · Platform · Agents · Integration · Collaboration
 
 ## Agonna on APIs.io
 
@@ -117,18 +117,38 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Agonna Com Agentic Access](https://apis.io/agentic-access/agonna-com/agonna-com-agentic-access/)
+- [Agonna Agentic Access](https://apis.io/agentic-access/agonna-com/agonna-com-agentic-access/)
 
-#### JSON Schema (6)
+#### JSON Schema (66)
 
 The data models the API reads and writes.
 
+- [ActivityCreate](https://apis.io/schemas/agonna-com/agonna-com-activity-create/)
+- [ActivityRead](https://apis.io/schemas/agonna-com/agonna-com-activity-read/)
 - [Create](https://apis.io/schemas/agonna-com/agonna-com-agent-exchange-conversations-schemas-create/)
-- [NetworkEventRead](https://apis.io/schemas/agonna-com/agonna-com-network-event-read/)
-- [SynthesizedOpportunityRead](https://apis.io/schemas/agonna-com/agonna-com-synthesized-opportunity-read/)
-- [TaskRead](https://apis.io/schemas/agonna-com/agonna-com-task-read/)
-- [UnifiedInboxItem](https://apis.io/schemas/agonna-com/agonna-com-unified-inbox-item/)
-- [WorldSourceRead](https://apis.io/schemas/agonna-com/agonna-com-world-source-read/)
+- [Complete](https://apis.io/schemas/agonna-com/agonna-com-agent-exchange-e2ee-v2-schemas-complete/)
+- [Create](https://apis.io/schemas/agonna-com/agonna-com-agent-exchange-e2ee-v2-schemas-create/)
+- [Contact](https://apis.io/schemas/agonna-com/agonna-com-agent-exchange-explore-contact/)
+- [AgentPrincipalBindingCreate](https://apis.io/schemas/agonna-com/agonna-com-agent-principal-binding-create/)
+- [AgentPrincipalBindingRead](https://apis.io/schemas/agonna-com/agonna-com-agent-principal-binding-read/)
+- [AgentRecommendationCreate](https://apis.io/schemas/agonna-com/agonna-com-agent-recommendation-create/)
+- [AgentRecommendationRead](https://apis.io/schemas/agonna-com/agonna-com-agent-recommendation-read/)
+- [AuthorizeDecision](https://apis.io/schemas/agonna-com/agonna-com-authorize-decision/)
+- [AuthorizeRequest](https://apis.io/schemas/agonna-com/agonna-com-authorize-request/)
+- [Certificate](https://apis.io/schemas/agonna-com/agonna-com-certificate/)
+- [ContactRequest](https://apis.io/schemas/agonna-com/agonna-com-contact-request/)
+- [ContactResponse](https://apis.io/schemas/agonna-com/agonna-com-contact-response/)
+- [ContributionCreate](https://apis.io/schemas/agonna-com/agonna-com-contribution-create/)
+- [ContributionRead](https://apis.io/schemas/agonna-com/agonna-com-contribution-read/)
+- [CredentialCapabilities](https://apis.io/schemas/agonna-com/agonna-com-credential-capabilities/)
+- [FederationIngestRequest](https://apis.io/schemas/agonna-com/agonna-com-federation-ingest-request/)
+- [FederationIngestResult](https://apis.io/schemas/agonna-com/agonna-com-federation-ingest-result/)
+- [FederationOutboxResponse](https://apis.io/schemas/agonna-com/agonna-com-federation-outbox-response/)
+- [FederationPeerCreate](https://apis.io/schemas/agonna-com/agonna-com-federation-peer-create/)
+- [FederationPeerRead](https://apis.io/schemas/agonna-com/agonna-com-federation-peer-read/)
+- [FederationSyncResult](https://apis.io/schemas/agonna-com/agonna-com-federation-sync-result/)
+- [HumanPrincipalCreate](https://apis.io/schemas/agonna-com/agonna-com-human-principal-create/)
+- …and 41 more published on APIs.io
 
 #### JSON-LD (1)
 
@@ -146,7 +166,7 @@ Spectral rulesets for the provider's contracts.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Agonna Com Domain Security](https://apis.io/security/agonna-com/agonna-com-domain-security/)
+- [Agonna Domain Security](https://apis.io/security/agonna-com/agonna-com-domain-security/)
 
 ## Where to find this API
 
@@ -159,25 +179,25 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 36.8** — thin · rubric 0.25.0 · scored 2026-11-01
+**Kin Score 29.4** — thin · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
-| Discoverability | 66.1 |
+| Discoverability | 73.2 |
 | Contract quality | 50.3 |
-| Contract governance | 79.1 |
-| Operational transparency | 15.8 |
+| Contract governance | 22.0 |
+| Operational transparency | 14.3 |
 | Developer ergonomics | 16.7 |
-| Access clarity | 10.5 |
+| Access clarity | 12.8 |
 
-**Agent readiness 55.7** — agent-native
+**Agent readiness 47.3** — agent-native
 
 | Agent-readiness dimension | Result |
 |---|---|
 | Spec Presence | yes |
-| Agentic Access | unknown |
+| Agentic Access | derived (partial credit) |
 | Reversibility Documented | — |
-| MCP Server | documented (partial credit) |
+| MCP Server | — |
 | Auth Clarity | served (partial credit) |
 | Idempotency | verified |
 | Error Semantics | verified |
@@ -195,8 +215,12 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Agentic Commerce | — |
 | Pagination Ratio | partial |
 | Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 19.1** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 13.6** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/agonna-com/](https://apis.io/providers/agonna-com/).
 
